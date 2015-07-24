@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html ng-app="todomvc">
+<head>
+  <meta charset="utf-8">
+</head>
+<body ng-controller="TodoCtrl as todoC">
+  <form ng-submit="todoC.addTodo()">
+    <input ng-model="todoC.newTodo" autofocus />
+  </form>
+  <ul>
+    <li ng-repeat="todo in todoC.todos">{{todo}}</li>
+  </ul>
+  <script src="node_modules/angular/angular.min.js"></script>
+  <script src="bundle.js"></script>
+</body>
+</html>
