@@ -9,7 +9,7 @@
 		vm.addTodo = addTodo;
 
 		function addTodo() {
-			vm.todos.push(vm.newTodo);
+			vm.todos.push({title: vm.newTodo});
 			vm.newTodo = '';
 		}
 	});
