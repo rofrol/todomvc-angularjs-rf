@@ -10,6 +10,10 @@
 		vm.removeTodo = removeTodo;
 
 		function addTodo() {
+			var newTodo = vm.newTodo.trim();
+			if(newTodo === '') {
+				return;
+			}
 			vm.todos.push({title: vm.newTodo});
 			vm.newTodo = '';
 		}
