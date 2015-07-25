@@ -8,7 +8,7 @@
     <input ng-model="todoC.newTodo" autofocus />
   </form>
   <ul>
-    <li ng-repeat="todo in todoC.todos">{{todo.title}}</li>
+    <li ng-repeat="todo in todoC.todos">{{todo.title}} <button ng-click="todoC.removeTodo(todo)">delete</button></li>
   </ul>
   <script src="node_modules/angular/angular.min.js"></script>
   <script src="bundle.js"></script>
